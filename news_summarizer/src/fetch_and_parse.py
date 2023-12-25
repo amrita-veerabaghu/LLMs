@@ -17,10 +17,21 @@ def fetch_and_parse(article_url: str):
             article.download()
             article.parse()
 
-            print(f"Title: {article.title}")
-            print(f"Text: {article.text}")
+            title = article.title
+            text = article.text
+            return title, text
 
         else:
             print(f"Failed to fetch article at {article_url}")
+            return None, None
     except Exception as e:
         print(f"Error occurred while fetching article at {article_url}: {e}")
+        return None, None
+
+
+if __name__ == "__main__":
+    example_article = \
+        "https://www.artificialintelligence-news.com/2022/01/25/meta-claims-new-ai-supercomputer-will-set-records/"
+    title, text = fetch_and_parse(example_article)
+    print(f"Title: {title}")
+    print(f"Text: {text}")
