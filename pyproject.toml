@@ -24,6 +24,9 @@ neural-compressor = "=2.2.1"
 onnx = "=1.14.1"
 pandas = "2.0.3"
 scipy = "1.11.2"
+langchain = "0.0.208"
+jupyterlab = "^4.0.9"
+google-api-python-client = "^2.111.0"
 
 
 [build-system]
