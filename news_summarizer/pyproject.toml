@@ -10,7 +10,7 @@ packages = [
 
 [tool.poetry.dependencies]
 python = "<3.13, >=3.10"
-langchain = "0.0.208"
+langchain = "0.0.352"
 deeplake = "^3.8.13"
 openai = "^1.6.1"
 tiktoken = "^0.5.2"
