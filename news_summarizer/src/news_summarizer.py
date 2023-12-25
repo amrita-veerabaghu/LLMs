@@ -5,6 +5,7 @@ from fetch_and_parse import fetch_and_parse
 from langchain.chat_models import ChatOpenAI
 from dotenv import load_dotenv
 
+# env file which stores all the API keys, in this case we need OPENAI_API_KEY to instantiate a openai chat model
 load_dotenv('../../env.sh')
 
 
