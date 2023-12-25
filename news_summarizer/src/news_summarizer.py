@@ -31,7 +31,6 @@ class ChatNewsSummarizer:
     def summarize_article(self, article_url):
         title, text = fetch_and_parse(article_url)
         prompt = self.template.format(article_title=title, article_text=text)
-        print(prompt)
         summary = self.chat([HumanMessage(content=prompt)])
         return summary.content
 
